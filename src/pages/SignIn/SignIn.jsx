@@ -17,7 +17,7 @@ export default function SignIn() {
   });
 
   const { setBlock } = useBlock();
-  const { login } = useToken();
+  const { logIn } = useToken();
   const redirectSignIn = useNavigate();
 
   async function handleSignIn(e) {
@@ -34,9 +34,9 @@ export default function SignIn() {
 
     postSignIn(bodySignIn)
       .then((response) => {
-        login(response.data.token);
+        logIn(response.data.token);
         setBlock(false);
-        redirectSignIn("/records", { replace: true });
+        redirectSignIn("/home", { replace: true });
       })
       .catch((err) => {
         setBlock(false);
