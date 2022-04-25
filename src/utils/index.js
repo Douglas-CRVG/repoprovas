@@ -1,0 +1,32 @@
+const signUp = [
+  {
+    name: "E-mail",
+    type: "email",
+    prop: "email",
+  },
+  {
+    name: "Senha",
+    type: "password",
+    prop: "password",
+  },
+  {
+    name: "Confirme a senha",
+    type: "password",
+    prop: "confirm",
+  },
+];
+
+const signIn = [
+  {
+    name: "E-mail",
+    type: "email",
+    prop: "email",
+  },
+  {
+    name: "Senha",
+    type: "password",
+    prop: "password",
+  },
+];
+
+export { signUp, signIn };
